@@ -28,11 +28,7 @@ tags:
   externalDocs:
     description: "Find out more about our store"
     url: "http://swagger.io"
-- name: "splash"
-  description: "Operations related to splash"
-  externalDocs:
-    description: "Find out more about splash"
-    url: "http://digimat-interactive.com/f0Splash.php"
+    
 schemes:
 - "https"
 - "http"
