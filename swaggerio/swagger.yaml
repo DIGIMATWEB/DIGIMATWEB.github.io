@@ -1,10 +1,7 @@
 ---
 swagger: "2.0"
 info:
-  description: "This is a sample server Petstore server.  You can find out more about\
-    \ Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).\
-    \  For this sample, you can use the api key `special-key` to test the authorization\
-    \ filters."
+  description: "This is a sample server Petstore server. You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/). For this sample, you can use the api key `special-key` to test the authorization filters."
   version: "1.0.5"
   title: "Swagger Petstore"
   termsOfService: "http://swagger.io/terms/"
@@ -16,51 +13,49 @@ info:
 host: "petstore.swagger.io"
 basePath: "/v2"
 tags:
-- name: "pet"
-  description: "Everything about your Pets"
-  externalDocs:
-    description: "Find out more"
-    url: "http://swagger.io"
-- name: "store"
-  description: "Access to Petstore orders"
-- name: "user"
-  description: "Operations about user"
-  externalDocs:
-    description: "Find out more about our store"
-    url: "http://swagger.io"
-- name: "splash"
-  description: "Operations related to splash"
-  externalDocs:
-    description: "Find out more about splash"
-    url: "http://digimat-interactive.com/f0Splash.php"
+  - name: "pet"
+    description: "Everything about your Pets"
+    externalDocs:
+      description: "Find out more"
+      url: "http://swagger.io"
+  - name: "store"
+    description: "Access to Petstore orders"
+  - name: "user"
+    description: "Operations about user"
+    externalDocs:
+      description: "Find out more about our store"
+      url: "http://swagger.io"
+  - name: "splash"
+    description: "Operations related to splash"
+    externalDocs:
+      description: "Find out more about splash"
+      url: "http://digimat-interactive.com/f0Splash.php"
 schemes:
-- "https"
-- "http"
+  - "https"
+  - "http"
 paths:
   /splash:
     post:
       tags:
-      - "splash"
+        - "splash"
       summary: "Request for splash"
       description: "Requests for a splash with provided token"
       operationId: "requestSplash"
       consumes:
-      - "application/json"
+        - "application/json"
       produces:
-      - "application/json"
+        - "application/json"
       parameters:
-      - in: "body"
-        name: "body"
-        description: "Token for splash request"
-        required: true
-        schema:
-          type: "object"
-          required:
-            - "token"
-          properties:
-            token:
-              type: "integer"
-              description: "Token value"
+        - in: "body"
+          name: "body"
+          description: "Token for splash request"
+          required: true
+          schema:
+            type: "object"
+            properties:
+              token:
+                type: "integer"
+                description: "Token value"
       responses:
         200:
           description: "successful operation"
@@ -103,8 +98,8 @@ definitions:
   Pet:
     type: "object"
     required:
-    - "name"
-    - "photoUrls"
+      - "name"
+      - "photoUrls"
     properties:
       id:
         type: "integer"
@@ -134,9 +129,9 @@ definitions:
         type: "string"
         description: "pet status in the store"
         enum:
-        - "available"
-        - "pending"
-        - "sold"
+          - "available"
+          - "pending"
+          - "sold"
     xml:
       name: "Pet"
   Tag:
@@ -168,15 +163,15 @@ definitions:
         type: "string"
         description: "Order Status"
         enum:
-        - "placed"
-        - "approved"
-        - "delivered"
+          - "placed"
+          - "approved"
+          - "delivered"
       complete:
         type: "boolean"
     xml:
       name: "Order"
   User:
-    type: "object" 
+    type: "object"
     properties:
       id:
         type: "integer"
