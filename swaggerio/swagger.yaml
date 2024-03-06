@@ -63,4 +63,4 @@ securityDefinitions:
     flow: "implicit"
     scopes:
       read: "Read access"
-      write: "Write access"
+      write: "Write access" 
