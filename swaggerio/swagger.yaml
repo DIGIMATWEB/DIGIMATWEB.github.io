@@ -34,33 +34,11 @@ schemes:
 - "https"
 - "http"
 paths:
-  /Login/acceso: 
+  /Login/acceso:
     post:
       tags:
       -"Login"
       summary: "accede al app"
-      description: ""
-      operationId: "addPet"
-      consumes:
-      - "application/json"
-      - "application/xml"
-      produces:
-      - "application/json"
-      - "application/xml"
-      parameters:
-      - in: "body"
-        name: "body"
-        description: "Pet object that needs to be added to the store"
-        required: true
-        schema:
-          $ref: "#/definitions/Pet"
-      responses:
-        405:
-          description: "Invalid input"
-      security:
-      - petstore_auth:
-        - "write:pets"
-        - "read:pets"
   /pet/{petId}/uploadImage:
     post:
       tags:
