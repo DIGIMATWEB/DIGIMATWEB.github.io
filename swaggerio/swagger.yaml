@@ -34,6 +34,11 @@ schemes:
 - "https"
 - "http"
 paths:
+  /Login/acceso:
+    post:
+      tags:
+      -"Login"
+      summary: "accede al app"
   /pet/{petId}/uploadImage:
     post:
       tags:
