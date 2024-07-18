@@ -16,6 +16,8 @@ info:
 host: "petstore.swagger.io"
 basePath: "/v2"
 tags:
+- name: "Login"
+  description: "Acceso a la aplicacion"
 - name: "pet"
   description: "Everything about your Pets"
   externalDocs:
