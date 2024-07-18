@@ -34,7 +34,7 @@ schemes:
 - "https"
 - "http"
 paths:
-  /Login/acceso:
+  /Login:
     post:
       tags:
       -"Login"
