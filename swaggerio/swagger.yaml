@@ -55,10 +55,10 @@ paths:
           properties:
             email:
               type: "string"
-              example: "inghfrancisco.morales@gmail.com"
+              example: ""
             password:
               type: "string"
-              example: "12345"
+              example: ""
       responses:
         200:
           description: "Successful login"
