@@ -37,10 +37,10 @@ paths:
   /f3login.php:
    post:
       tags:
-      - "Login"
+      - ""
       summary: "Accede a la app"
       description: ""
-      operationId: "addPet"
+      operationId: "Login"
       consumes:
       - "application/json"
       - "application/xml"
