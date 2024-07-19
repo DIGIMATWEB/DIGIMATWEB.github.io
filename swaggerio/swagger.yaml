@@ -31,7 +31,7 @@ tags:
     description: "Find out more about our store"
     url: "http://swagger.io"
 schemes:
-- "https"
+#- "https"
 - "http"
 paths:
   /f3login.php:
