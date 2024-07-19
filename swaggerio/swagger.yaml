@@ -64,33 +64,12 @@ paths:
           description: "Successful login"
           schema:
             type: "object"
-            properties:
-              resconseCode:
-                type: "integer"
-                example: 200
-              message:
-                type: "string"
-                example: "success"
-              data:
-                type: "object"
-                properties:
-                  name:
-                    type: "string"
-                    example: "francisco"
-                  email:
-                    type: "string"
-                    example: "inghfrancisco.morales@gmail.com"
-                  token:
-                    type: "string"
-                    example: "af599b21642927b27963b1d66694896a"
+    
         405:
           description: "Invalid input"
           schema:
             type: "object"
-            properties:
-              message:
-                type: "string"
-                example: "Invalid input"
+           
   /pet/{petId}/uploadImage:
     post:
       tags:
