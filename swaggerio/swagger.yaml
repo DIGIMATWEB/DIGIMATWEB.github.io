@@ -38,7 +38,7 @@ paths:
    post:
       tags:
       - "Login"
-      summary: "Add a new pet to the store"
+      summary: "Accede a la app"
       description: ""
       operationId: "addPet"
       consumes:
