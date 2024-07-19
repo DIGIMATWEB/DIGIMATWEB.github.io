@@ -33,7 +33,7 @@ tags:
 schemes:
 #- "https"
 - "http"
-paths:.
+paths:
   /f3login.php:
      post:
       tags:
