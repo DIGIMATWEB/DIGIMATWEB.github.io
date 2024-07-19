@@ -13,8 +13,8 @@ info:
   license:
     name: "Apache 2.0"
     url: "http://www.apache.org/licenses/LICENSE-2.0.html"
-host: "digimat-interactive.com/"
-basePath: ""
+host: "digimat-interactive.com"
+basePath: "/"
 tags:
 - name: "Login"
   description: "Acceso a la aplicación"
@@ -35,12 +35,12 @@ schemes:
 - "http"
 paths:
   /f3login.php:
-   post:
-     tags:
+    post:
+      tags:
       - "Login"
       summary: "Accede a la app"
-      description: "Endpoint for user login"
-      operationId: "login"
+      description: "Endpoint for logging into the application"
+      operationId: "loginUser"
       consumes:
       - "application/json"
       produces:
@@ -48,7 +48,7 @@ paths:
       parameters:
       - in: "body"
         name: "body"
-        description: "User credentials for login"
+        description: "User login credentials"
         required: true
         schema:
           type: "object"
@@ -61,16 +61,21 @@ paths:
               example: "12345"
       responses:
         200:
-          description: "Login successful"
+          description: "Successful login"
           schema:
             type: "object"
             properties:
-              token:
+              message:
                 type: "string"
-        401:
-          description: "Unauthorized"
+                example: "Login successful"
         405:
           description: "Invalid input"
+          schema:
+            type: "object"
+            properties:
+              message:
+                type: "string"
+                example: "Invalid input"
   /pet/{petId}/uploadImage:
     post:
       tags:
