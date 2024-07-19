@@ -34,6 +34,29 @@ schemes:
 - "https"
 - "http"
 paths:
+  /Login/digimatLogin:
+   post:
+      tags:
+      - "pet"
+      summary: "Add a new pet to the store"
+      description: ""
+      operationId: "addPet"
+      consumes:
+      - "application/json"
+      - "application/xml"
+      produces:
+      - "application/json"
+      - "application/xml"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "Pet object that needs to be added to the store"
+        required: true
+        schema:
+          $ref: "#/definitions/Pet"
+      responses:
+        405:
+          description: "Invalid input"
   /pet/{petId}/uploadImage:
     post:
       tags:
