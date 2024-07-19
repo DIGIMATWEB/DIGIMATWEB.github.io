@@ -14,7 +14,7 @@ info:
     name: "Apache 2.0"
     url: "http://www.apache.org/licenses/LICENSE-2.0.html"
 host: "http://digimat-interactive.com/"
-basePath: "/v2"
+basePath: ""
 tags:
 - name: "Login"
   description: "Acceso a la aplicación"
