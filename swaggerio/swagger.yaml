@@ -37,7 +37,7 @@ paths:
   /f3login.php:
    post:
       tags:
-      - ""
+      - "Login"
       summary: "Accede a la app"
       description: ""
       operationId: "Login"
