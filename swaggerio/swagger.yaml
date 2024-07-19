@@ -43,10 +43,10 @@ paths:
       operationId: "Login"
       consumes:
       - "application/json"
-      - "application/xml"
+      #- "application/xml"
       produces:
       - "application/json"
-      - "application/xml"
+     # - "application/xml"
       parameters:
       - in: "body"
         name: "body"
