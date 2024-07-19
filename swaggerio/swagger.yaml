@@ -13,7 +13,7 @@ info:
   license:
     name: "Apache 2.0"
     url: "http://www.apache.org/licenses/LICENSE-2.0.html"
-host: "digimat-interactive.com"
+host: "digimat-interactive.com:3000"
 basePath: "/"
 tags:
 - name: "Login"
@@ -33,7 +33,7 @@ tags:
 schemes:
 #- "https"
 - "http"
-paths:
+paths:.
   /f3login.php:
      post:
       tags:
