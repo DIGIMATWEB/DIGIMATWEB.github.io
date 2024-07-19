@@ -13,7 +13,7 @@ info:
   license:
     name: "Apache 2.0"
     url: "http://www.apache.org/licenses/LICENSE-2.0.html"
-host: "petstore.swagger.io"
+host: "http://digimat-interactive.com/"
 basePath: "/v2"
 tags:
 - name: "Login"
@@ -34,7 +34,7 @@ schemes:
 - "https"
 - "http"
 paths:
-  /Login/digimatLogin:
+  /f3login.php:
    post:
       tags:
       - "Login"
@@ -52,8 +52,8 @@ paths:
         name: "body"
         description: "Pet object that needs to be added to the store"
         required: true
-        schema:
-          $ref: "#/definitions/Pet"
+       # schema:
+       #   $ref: "#/definitions/Pet"
       responses:
         405:
           description: "Invalid input"
