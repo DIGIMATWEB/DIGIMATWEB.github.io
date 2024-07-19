@@ -36,25 +36,39 @@ schemes:
 paths:
   /f3login.php:
    post:
-      tags:
+     tags:
       - "Login"
       summary: "Accede a la app"
-      description: ""
-      operationId: "Login"
+      description: "Endpoint for user login"
+      operationId: "login"
       consumes:
       - "application/json"
-      #- "application/xml"
       produces:
       - "application/json"
-     # - "application/xml"
       parameters:
       - in: "body"
         name: "body"
-        description: "Pet object that needs to be added to the store"
+        description: "User credentials for login"
         required: true
-       # schema:
-       #   $ref: "#/definitions/Pet"
+        schema:
+          type: "object"
+          properties:
+            email:
+              type: "string"
+              example: "inghfrancisco.morales@gmail.com"
+            password:
+              type: "string"
+              example: "12345"
       responses:
+        200:
+          description: "Login successful"
+          schema:
+            type: "object"
+            properties:
+              token:
+                type: "string"
+        401:
+          description: "Unauthorized"
         405:
           description: "Invalid input"
   /pet/{petId}/uploadImage:
