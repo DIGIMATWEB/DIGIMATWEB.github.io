@@ -13,7 +13,7 @@ info:
   license:
     name: "Apache 2.0"
     url: "http://www.apache.org/licenses/LICENSE-2.0.html"
-host: "digimat-interactive.com:3000"
+host: "digimat-interactive.com"
 basePath: "/"
 tags:
 - name: "Login"
