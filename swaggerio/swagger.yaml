@@ -35,7 +35,7 @@ schemes:
 - "http"
 paths:
   /f3login.php:
-    post:
+     post:
       tags:
       - "Login"
       summary: "Accede a la app"
@@ -65,9 +65,24 @@ paths:
           schema:
             type: "object"
             properties:
+              resconseCode:
+                type: "integer"
+                example: 200
               message:
                 type: "string"
-                example: "Login successful"
+                example: "success"
+              data:
+                type: "object"
+                properties:
+                  name:
+                    type: "string"
+                    example: "francisco"
+                  email:
+                    type: "string"
+                    example: "inghfrancisco.morales@gmail.com"
+                  token:
+                    type: "string"
+                    example: "af599b21642927b27963b1d66694896a"
         405:
           description: "Invalid input"
           schema:
