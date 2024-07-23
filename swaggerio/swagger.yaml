@@ -59,6 +59,13 @@ paths:
             password:
               type: "string"
               example: ""
+        headers:
+            Access-Control-Allow-Headers:
+              type: string
+              example: "Content-Type, Authorization"
+            Access-Control-Allow-Methods:
+              type: string
+              example: "GET, POST, PUT, DELETE, OPTIONS"      
       responses:
         200:
           description: "Successful login"
