@@ -113,9 +113,9 @@ paths:
           schema:
             type: "object"
             properties:
-              toke:
-              type: "string"
-              example: "xxxxx"
+              token:
+                type: "string"
+                example: "xxxxx"
         responses:
               200:
                 description: "Successful login"
