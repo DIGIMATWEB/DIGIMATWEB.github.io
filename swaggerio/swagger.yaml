@@ -131,22 +131,35 @@ paths:
                   properties:
                     resconseCode:
                       type: "integer"
-                      example: 200
+                      example: 105
                     message:
                       type: "string"
                       example: "succes"
                     data:
-                      type: "object"
-                      properties:
-                        name:
-                          type: "string"
-                          example: "Name"
-                        email:
-                          type: "string"
-                          example: "test@mail.com"
-                        token:
-                          type: "string"
-                          example: "aaaaaaaaaaaa"
+                      type: "array"
+                      items:
+                        type: "object"
+                        properties:
+                          zoneId:
+                            type: "string"
+                            example: "1"
+                          zoneName:
+                            type: "string"
+                            example: "zonaName"
+                          ratio:
+                            type: "string"
+                            example: "1"
+                          dots:
+                            type: "array"
+                            items:
+                              type: "object"
+                              properties:
+                                Latitud:
+                                  type: "string"
+                                  example: "0"
+                                Longitud:
+                                  type: "string"
+                                  example: "0"
               405:
                 description: "Invalid input"
                 schema:
