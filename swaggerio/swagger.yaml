@@ -94,7 +94,7 @@ paths:
           description: "Invalid input"
           schema:
             type: "object"
-   /getZones.php:
+  /getZones.php:
       post:
         tags:
         - "Login"
@@ -143,8 +143,7 @@ paths:
               405:
                 description: "Invalid input"
                 schema:
-                  type: "object"
-                
+                  type: "object"              
   /pet/{petId}/uploadImage:
     post:
       tags:
