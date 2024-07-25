@@ -106,16 +106,23 @@ paths:
         produces:
         - "application/json"
         parameters:
-        - in: "body"
-          name: "body"
-          description: " userToken"
-          required: true
-          schema:
-            type: "object"
-            properties:
-              token:
-                type: "string"
-                example: "xxxxx"
+      - in: "body"
+        name: "body"
+        description: "Zones list"
+        required: true
+        schema:
+          type: "object"
+          properties:
+            token:
+              type: "string"
+              example: "XXXXXXXXX"
+        headers:
+            Access-Control-Allow-Headers:
+              type: string
+              example: "Content-Type, Authorization"
+            Access-Control-Allow-Methods:
+              type: string
+              example: "GET, POST, PUT, DELETE, OPTIONS"
         responses:
               200:
                 description: "Successful login"
