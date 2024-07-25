@@ -94,56 +94,56 @@ paths:
           description: "Invalid input"
           schema:
             type: "object"
-    /getZones.php:
-    post:
-      tags:
-       - "Login"
-       summary: "Obtiene las zonas registradas"
-       description: "Endpoint for getAllZones"
-       operationId: "zones"
-       consumes: 
-       - "application/json"
-       produces:
-       - "application/json"
-       parameters:
-       - in: "body"
-         name: "body"
-         description: " userToken"
-         required: true
-         schema:
-          type: "object"
-          properties:
-            toke:
-            type: "string"
-            example: "xxxxx"
-      responses:
-            200:
-              description: "Successful login"
-              schema:
-                type: "object"
-                properties:
-                  resconseCode:
-                    type: "integer"
-                    example: 200
-                  message:
-                    type: "string"
-                    example: "succes"
-                  data:
-                    type: "object"
-                    properties:
-                      name:
-                        type: "string"
-                        example: "Name"
-                      email:
-                        type: "string"
-                        example: "test@mail.com"
-                      token:
-                        type: "string"
-                        example: "aaaaaaaaaaaa"
-            405:
-              description: "Invalid input"
-              schema:
-                type: "object"
+   /getZones.php:
+      post:
+        tags:
+        - "Login"
+        summary: "Obtiene las zonas registradas"
+        description: "Endpoint for getAllZones"
+        operationId: "zones"
+        consumes: 
+        - "application/json"
+        produces:
+        - "application/json"
+        parameters:
+        - in: "body"
+          name: "body"
+          description: " userToken"
+          required: true
+          schema:
+            type: "object"
+            properties:
+              toke:
+              type: "string"
+              example: "xxxxx"
+        responses:
+              200:
+                description: "Successful login"
+                schema:
+                  type: "object"
+                  properties:
+                    resconseCode:
+                      type: "integer"
+                      example: 200
+                    message:
+                      type: "string"
+                      example: "succes"
+                    data:
+                      type: "object"
+                      properties:
+                        name:
+                          type: "string"
+                          example: "Name"
+                        email:
+                          type: "string"
+                          example: "test@mail.com"
+                        token:
+                          type: "string"
+                          example: "aaaaaaaaaaaa"
+              405:
+                description: "Invalid input"
+                schema:
+                  type: "object"
                 
   /pet/{petId}/uploadImage:
     post:
