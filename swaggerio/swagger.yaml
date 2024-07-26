@@ -16,6 +16,8 @@ info:
 host: "digimat-interactive.com"
 basePath: "/"
 tags:
+- name: "Splash"
+  description: "Imagen inicial"
 - name: "Login"
   description: "Acceso a la aplicación"
 - name: "Zonas"
@@ -36,6 +38,59 @@ schemes:
 #- "https"
 - "http"
 paths:
+  /f0Splash.php:
+     post:
+      tags:
+      - "Splash"
+      summary: "Configuracion de Splash"
+      description: "Endpoint para configuracion de pantalla de inicio"
+      operationId: "splashGet"
+      consumes:
+      - "application/json"
+      produces:
+      - "application/json"
+      parameters:
+      - in: "body"
+        name: "body"
+        description: "solicitud de splash"
+        required: true
+        schema: 
+          type: "object"
+          properties:
+            appId:
+              type: "integer"
+              example: 100
+      responses:
+        200:
+          description: "Successful login"
+          schema:
+            type: "object"
+            properties:
+              resconseCode:
+                type: "integer"
+                example: 105
+              message:
+                type: "string"
+                example: "succes"
+              data:
+                type: "object"
+                properties:
+                  backgroundColor:
+                    type: "string"
+                    example: "#FF0000"
+                  backgroundImage:
+                    type: "string"
+                    example: "https://digimatweb.github.io/img/logo.png"
+                  logo:
+                    type: "string"
+                    example: "logo1"
+                  mVehicleType:
+                    type: "string"
+                    example: "1"
+        405:
+          description: "Invalid input"
+          schema:
+            type: "object"         
   /f3login.php:
      post:
       tags:
