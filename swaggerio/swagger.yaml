@@ -38,7 +38,7 @@ schemes:
 #- "https"
 - "http"
 paths:
-  /f0Splash.php:
+  /f0Splash:
      post:
       tags:
       - "Splash"
