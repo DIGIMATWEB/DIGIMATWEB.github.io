@@ -18,6 +18,8 @@ basePath: "/"
 tags:
 - name: "Login"
   description: "Acceso a la aplicación"
+- name: "Zonas"
+  description: "Obtiene las zonas registradas"  
 #- name: "pet"
 #  description: "Everything about your Pets"
 #  externalDocs:
@@ -97,7 +99,7 @@ paths:
   /getZones.php:
       post:
         tags:
-        - "Login"
+        - "Zonas"
         summary: "Obtiene las zonas registradas"
         description: "Endpoint for getAllZones"
         operationId: "zones"
