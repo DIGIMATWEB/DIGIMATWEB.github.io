@@ -11,10 +11,8 @@
       <a-assets>
         <a-asset-item id="model" src="model.glb"></a-asset-item>
       </a-assets>
-      <a-marker type="pattern" url="marker.patt">
-        <!-- Aumentamos la escala y ajustamos la posición -->
-        <a-entity gltf-model="model.glb" scale="0.01 0.01 0.01" position="0 0 0"></a-entity>
-
+      <a-marker preset="hiro">
+        <a-entity gltf-model="#model" scale="1 1 1" position="0 0.5 0"></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
