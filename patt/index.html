@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Digimat Marker Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="https://digimatweb.github.io/img/logo.png" alt="Digimat Logo" class="logo" />
+    <h1>Digimat Marker Generator</h1>
+    <p>Upload an image to generate your AR.js marker (.patt)</p>
+    <input type="file" id="imageUpload" accept="image/*" />
+    <br />
+    <canvas id="preview" width="400" height="400"></canvas>
+    <br />
+    <button onclick="generate()">Generate .patt</button>
+    <a id="downloadLink" style="display: none;" download="marker.patt">Download Marker</a>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/jsartoolkit5@1.5.2/build/artoolkit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jsartoolkit5@1.5.2/js/artoolkit.api.js"></script>
+  <script src="markerGenerator.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+
+body {
+  font-family: sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+  padding: 2em;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 2em;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+  max-width: 150px;
+  margin-bottom: 1em;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  margin-top: 1em;
+}
