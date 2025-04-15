@@ -11,9 +11,10 @@
       <a-assets>
         <a-asset-item id="model" src="model.glb"></a-asset-item>
       </a-assets>
-      <a-marker preset="hiro">
-        <a-entity gltf-model="#model" scale="1 1 1" position="0 0.5 0"></a-entity>
+      <a-marker type="pattern" url="marker.patt">
+        <a-box color="red" scale="0.5 0.5 0.5" position="0 0.25 0"></a-box>
       </a-marker>
+      
       <a-entity camera></a-entity>
     </a-scene>
   </body>
