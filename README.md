@@ -1,59 +1,74 @@
-# _Airspace_ for Jekyll
-![screenshot](screenshots/home.png "Description goes here")
+# Airspace Jekyll
 
-This Jekyll theme is a port of ThemeFisher's Airspace template. It is released under ThemeFisher's free license, which requires attribution.
+Airspace Jekyll Creative Agency Template ported from [Airspace HTML Template](https://themefisher.com/products/airspace/)
 
-## Usage
-To start your project, [fork this respository](https://github.com/ndrewtl/airspace-jekyll/fork), put in your content, and go!
+![airspace](https://assets.teamosis.com/thumbs/airspace.png)
 
-## Examples
-Here are some projects that have used this Jekyll Theme:
-* [BOYUAN Open Source 博辕开源](https://boyuanitsm.github.io)
-* [Campus VC](https://mrchildneo.github.io/mrchildneo/)
-* [Mãos de amar](https://www.maosdeamar.com.br/)
-* [ATK Team](http://www.atksec.com/)
-* [Coding Club](https://ourcodingclub.github.io/)
-* [Dev Empathy Book Club](http://www.devempathybook.club/)
-* [DKAN Open Data Catalog](http://getdkan.com) (modified version of this theme)
+## Setup
 
-## Steps for Setup:
+To start your project, fork this repository
+After forking the repo, your site will be live immediately on your personal Github Pages account, e.g. `https://yourusername.github.io/your-repo-name/`.
 
-### Make sure you have Ruby
+Make sure GitHub Pages is enabled for your repo. It might take some time for the site to propagate entirely.
 
-First, make sure you have [Ruby](https://www.ruby-lang.org/en/) installed. You can confirm this by running `ruby -v` on the command line:
+## Customize
 
-```sh
-$ ruby -v
-ruby [version number] (date) [your platform]
-```
+Things you can customize in `_data/settings.yml` (no HTML/CSS):
 
-If you get something like `"Error, command not found"` visit the link above and install Ruby for your platform.
+- Theme General Settings ( name, logo, email, phone, address )
+- Hero Section
+- About Section
+- Team Section
+- Skills Section
+- Experience Section
+- Education Section
+- Services Section
+- Portfolio Section
+- Testimonials Section
+- Client Slider Section
+- Contact Section
 
+## Deployment
 
-### Make sure you have Jekyll
+To run the theme locally, navigate to the theme directory and run `bundle install` to install the dependencies, then run `jekyll serve` or `bundle exec jekyll serve` to start the Jekyll server.
+I would recommend checking the [Deployment Methods](https://jekyllrb.com/docs/deployment-methods/) page on Jekyll's website.
 
-Next, make sure you have [Jekyll](https://jekyllrb.com/) installed. Just like above, run `jekyll -v` on the command line:
+<!-- edit with sitepins -->
 
-```sh
-$ jekyll -v
-jekyll [version number]
-```
-If you get `"Error, command not found"` run `gem install jekyll` to install it using RubyGems.
+## 📝 Edit Content with CMS
 
-### Run this repository
-Clone the repository, and `cd` into it:
-```sh
-$ git clone https://github.com/ndrewtl/airspace-jekyll.git
-$ cd airspace-jekyll
-```
+This template comes pre-configured with [**Sitepins**](https://sitepins.com), a Git-based Headless CMS designed for seamless content management. You can update your website’s text, images, and configuration without touching a single line of code.
 
-Install Dependencies:
-```sh
-$ bundle install
-```
+**How to get started:**
 
+<<<<<<< HEAD
 And run the server:
 ```sh 
 $ jekyll serve
 ```
  the link below content the information for installing https://medium.com/@vovakuzmenkov/get-a-website-with-github-pages-9151ed636446
+=======
+Click the Edit with Sitepins button below and follow the on-screen instructions to start editing your content visually.
+
+  <a target="_blank" href="https://app.sitepins.com/new/clone?name=Airspace%20Jekyll&repository=https://github.com/themefisher/airspace-jekyll/">
+    <img src="https://sitepins.com/button.svg" alt="Edit with Sitepins">
+  </a>
+  
+## Reporting Issues
+
+We use GitHub Issues as the official bug tracker for **Airspace**. Please Search [existing issues](https://github.com/themefisher/airspace-jekyll/issues). It’s possible someone has already reported the same problem.
+If your problem or idea is not addressed yet, [open a new issue](https://github.com/themefisher/airspace-jekyll/issues/new)
+
+## Technical Support or Questions
+
+If you have questions or need help integrating the product please [contact us](mailto:themefisher@gmail.com) instead of opening an issue.
+
+<!-- licence -->
+## License
+
+Copyright (c) 2016 - Present, Designed & Developed by [Themefisher](https://themefisher.com)
+
+**Code License:** Released under the [MIT](https://github.com/themefisher/airspace-jekyll/blob/main/LICENSE) license.
+
+**Image license:** The images are only for demonstration purposes. They have their license, we don't have permission to share those images.
+>>>>>>> 8def19e925b996be6160e1e79f0c0c38d059737a
